@@ -2,10 +2,10 @@
 int number = Convert.ToInt32(Console.ReadLine());
 if (number % 2 == 0) 
 {
-    Console.WriteLine("Введеное число четное");
+    Console.WriteLine("Введеное число: четное");
 }
 else
 {
-    Console.WriteLine("Введеное число нечетное");
+    Console.WriteLine("Введеное число: нечетное");
 } 
 
