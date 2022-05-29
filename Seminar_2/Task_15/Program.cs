@@ -7,13 +7,12 @@
 Console.Clear();
 Console.Write("Введите цифру, обозначающую день недели: ");
 int DayNumber = Convert.ToInt32(Console.ReadLine());
-if (DayNumber < 6) 
+if (DayNumber >= 1 && DayNumber < 6) 
 {
     Console.Write($"{DayNumber} -> нет");
 }
 else
-
+{
     Console.Write($"{DayNumber} -> да");
-
-
+}
 Console.WriteLine();
