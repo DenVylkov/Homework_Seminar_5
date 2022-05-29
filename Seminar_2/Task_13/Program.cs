@@ -1,5 +1,18 @@
-﻿if(n > 99)
-{
-    Console.WriteLine((n / 100) % 10);
-}
+﻿/*Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+645 -> 5
+78 -> третьей цифры нет
+32679 -> 6*/
 
+
+Console.Clear();
+Console.Write("Введите любое число: ");
+int Number = Convert.ToInt32(Console.ReadLine());
+if(Number > 99)
+{
+    Console.WriteLine((Number / 100) % 10);
+}
+else 
+{
+    Console.WriteLine($"{Number} -> третьей цифры нет!");
+    
+}
