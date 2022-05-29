@@ -2,19 +2,21 @@
 645 -> 5
 78 -> третьей цифры нет
 32679 ->
-Console.WriteLine((Number / 100) % 10);  6*/
+*/
 
 
 Console.Clear();
+Console.ForegroundColor=ConsoleColor.White;
 Console.Write("Введите любое положительное число: ");
 int Number = Convert.ToInt32(Console.ReadLine());
-
+ Console.ForegroundColor=ConsoleColor.Red;
 if (Number <= 99)
 {
     Console.WriteLine($"В числе {Number} -> третьей цифры нет!");
 }
+    
 else
-{
+{   Console.ForegroundColor=ConsoleColor.White;
     if (Number > 99 & Number <= 999)
     {
         int NumberThree = (Number % 10);
