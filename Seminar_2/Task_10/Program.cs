@@ -1,15 +1,7 @@
 ﻿/*Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
 456 -> 5
 782 -> 8
-918 -> 1
-
-Console.Clear();
-Console.Write("Введите любое трехзначное число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-int numberA = number % 100;
-int numberB = numberA / 10;
-Console.Write($"Ответ: вторая цифра числа {number} -> {numberB} ");
-Console.WriteLine ();
+918 -> 1*/
 
 Console.Clear();
 Console.Write("Введите любое трехзначное число: ");
