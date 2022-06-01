@@ -2,7 +2,6 @@
 645 -> 5
 78 -> третьей цифры нет
 32679 ->
-*/
 
 
 Console.Clear();
@@ -16,7 +15,7 @@ if (Number <= 99)
 }
     
 else
-{   Console.ForegroundColor=ConsoleColor.White;
+{   Console.ForegroundColor=ConsoleColor.Green;
     if (Number > 99 & Number <= 999)
     {
         int NumberThree = (Number % 10);
@@ -38,4 +37,29 @@ else
         Console.WriteLine($"{Number} -> {NumberThree}");
     }
     Console.WriteLine("__________________________");
+}
+*/
+
+int GetThirdNumber(int inputNumber)
+{
+    int result = 0;
+    while(inputNumber > 999)
+    {
+        inputNumber /= 10;
+    }
+    result = inputNumber % 10;
+    return result;
+}
+
+Console.WriteLine("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+number = Math.Abs(number);
+if(number > 99)
+{
+    int thirdNumber = GetThirdNumber(number);
+    Console.WriteLine($"Третье число {thirdNumber}");
+}
+else
+{
+    Console.WriteLine("Третьего числа нет");
 }
